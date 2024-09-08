@@ -1,0 +1,22 @@
+Page index + Page individuelles:
+Schedule : Franck
+Gallery + Contact : Non utilisé - Pierre
+Speakers : Claudia
+Blog : Lydie
+Pricing : Shir Shah
+
+Contenu supplémentaire de la page d'accueil :
+Franck : Countdown + Why you should join + About the Event + Merge des contenus HTML + SASS + responsive navbar + header + corrections/debug
+Claudia : header + boutons + gradients backgrounds
+Pierre : What People Say About Us + navbar + header
+Lydie : footer + Book your seat now + header + menu burger + fil d'Ariane + responsive navbar
+
+Tout le monde a participé à cette magnifique toile. L'utilisation de crayons de couleurs a été globale, bien que parfois imprécise, mais nous avons tenu le cap car l'amour triomphe toujours à la fin.
+Cependant, si la mémoire est à la tête ce que le passé, peut-on y accéder à six ?
+
+Résolution d'écran de tout le monde (pour les soucis d'échelle)
+Lydie : 1080p + 4k (avec une mise à l'échelle qui a faussé les tailles)
+Pierre : 4k + 4k
+Franck : 1080p + 1080p
+Claudia : 1080p + 1080p
+Shir Shah : ???

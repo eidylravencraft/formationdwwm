@@ -1,0 +1,61 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+    gap : 20px;
+}
+
+img {
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 500;
+    margin-top: 50px;
+}
+
+.pierre, .feuille, .ciseau {
+    cursor: pointer;
+}
+
+.choice {
+    display: none;
+}
+
+.equal, .win, .lose {
+    font-size: 1.5rem;
+}
+
+.equal {
+    display: none;
+    color: gray;
+}
+
+.win {
+    display: none;
+    color : green
+}
+
+.lose {
+    display: none;
+    color : red
+}
+
+.finished {
+    display: none;
+    text-align: center;
+}
+
+.winorlose {
+    margin: 10px 0;
+}
+

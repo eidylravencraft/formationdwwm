@@ -1,0 +1,79 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #3d475a 0%, #717e87 100%);
+}
+
+.title {
+    margin-top: 50px;
+    color: #f1f1f1;
+}
+
+span {
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #f1f1f1;
+}
+
+h1 {
+    display: inline;
+    font-family: "Playfair";
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.morpion {
+    width: 500px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin: 50px;
+    background-color: #090f29;
+    border: 1px solid #f1f1f1;
+    box-shadow: 0px 0px 10px #333;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #f1f1f1;
+    color: #f1f1f1;
+    font-size: 5rem;
+    cursor: pointer;
+}
+
+.message {
+    font-size: 1.7rem;
+    font-weight: 300;
+    color: #f1f1f1;
+}
+
+button {
+    padding: 15px;
+    margin: 20px 0;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #f1f1f1;
+    background-color: #090f29;
+    border: none;
+    box-shadow: 0px 0px 10px #33333387;
+    cursor: pointer;
+}
+
+button:active {
+    box-shadow: none;
+}

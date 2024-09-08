@@ -1,0 +1,165 @@
+@import '_variables.scss';
+
+.main-schedule {
+  margin: 0;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-bg-elem;
+  h2 {
+    font-weight: 900;
+    margin-bottom: 30px;
+  }
+  p {
+    text-align: center;
+    font-size: 1rem;
+    width: 45%;
+    margin-bottom: 50px;
+    color: black;
+    font-weight: 500;
+  }
+  .day-container {
+    width: 80%;
+    height: 120px;
+    display: inherit;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+    .days {
+      display: inherit;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      background-color: white;
+      border-radius: 5px;
+      width: 30%;
+      height: 120px;
+      border-bottom: 4px solid white;
+      &:hover {
+        border-bottom: 4px solid $color-pink;
+        h5 {
+          color: $color-pink;
+        }
+      }
+      h5 {
+        font-weight: 600;
+        margin: 0;
+      }
+      p {
+        margin: 0;
+        font-size: 0.8rem;
+        color: lightgray;
+        font-weight: 600;
+      }
+    }
+    .day1 {
+      background-color: $color-blue;
+      color: white;
+      border-bottom: 4px solid $color-blue;
+      &:hover {
+        color: white;
+        border-bottom: 4px solid $color-blue;
+        h5 {
+          color: white;
+        }
+      }
+    }
+  }
+  .event-container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 30px;
+    .event {
+      flex-wrap: wrap;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      height: 100px;
+      background-color: white;
+      padding: 0 20px;
+      border-radius: 5px;
+      border-left: 4px solid white;
+      &:hover {
+        border-left: 4px solid $color-pink;
+        h5 {
+          color: $color-pink;
+        }
+        .event-date {
+          h5 {
+            color: black;
+          }
+        }
+      }
+      .event-date {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+        margin: 0;
+        padding: 0;
+        h2 {
+          font-weight: 800;
+          margin: 0;
+        }
+        div {
+          h5 {
+            margin: 0;
+            &:hover {
+              color: $color-pink;
+            }
+          }
+          p {
+            width: 120px;
+            display: block;
+            margin: 0;
+            font-size: 0.8rem;
+            color: lightgray;
+            font-weight: 700;
+            font-size: 0.8rem;
+          }
+        }
+      }
+      .event-location {
+        display: flex;
+        flex-direction: row;
+        img {
+          border-radius: 50%;
+          width: 60px;
+          display: inline-block;
+          margin-right: 20px;
+        }
+        div {
+          div {
+            display: flex;
+            flex-direction: row;
+            height: 20px;
+            gap: 5px;
+            svg {
+              width: 20px;
+              fill: #f10486;
+            }
+            p {
+              font-size: 0.9rem;
+              width: 100%;
+              margin-left: -5px;
+              color: lightgray;
+            }
+          }
+        }
+      }
+      button {
+        padding: 25px 25px;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        font-size: 0.9rem;
+      }
+    }
+  }
+}

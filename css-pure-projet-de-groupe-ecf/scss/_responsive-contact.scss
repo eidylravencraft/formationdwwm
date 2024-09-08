@@ -1,0 +1,13 @@
+@media screen and (max-width: 800px) {
+  .container-contact {
+    margin: 15px 25px;
+    gap: 50px;
+    .container-us {
+      width: 50%;
+      min-width: 350px;
+    }
+    .container-formulaire {
+      min-width: 350px;
+    }
+  }
+}

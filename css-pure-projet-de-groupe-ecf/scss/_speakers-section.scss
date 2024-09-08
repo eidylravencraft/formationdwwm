@@ -1,0 +1,122 @@
+$color-text: #111232;
+$color-smText: #9c9cae;
+$color-bkg: #f5f7fa;
+
+.container-pagespeaker {
+  background-color: $color-bkg;
+  padding-bottom: 50px;
+  .container-speakers {
+    // display: block;
+    text-align: center;
+    padding: 40px;
+    margin: 0 auto;
+    width: calc(350px + 20vw);
+    // width: 350px;
+    h2,
+    p {
+      // display: inline-block;
+      margin: 40px;
+    }
+
+    h6 {
+      margin-top: 10px;
+      color: $color-pink;
+      &::before,
+      &::after {
+        content: '_';
+        color: $color-pink;
+        display: inline-block;
+        position: relative;
+        top: -4px;
+        font-size: 30px;
+        font-weight: 100;
+        margin: 0 10px;
+      }
+    }
+  }
+  .container-performers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    .card-speak {
+      position: relative;
+      transition: transform 1s ease-in-out 0.4s, opacity 0.5s ease-in-out;
+      overflow: hidden;
+      width: 373px;
+      height: 440px;
+      .sp {
+        img {
+          width: 100%;
+        }
+        &:hover ~ .socials {
+          transform: translatex(0px);
+          opacity: 0.7;
+        }
+      }
+      .socials {
+        position: absolute;
+        display: flex;
+        gap: 5px;
+        bottom: 80px;
+        left: 110px;
+        transform: translateX(-225px);
+        transition: transform 1s ease-in-out, opacity 0.5s ease-in-out 0.4s;
+        opacity: 0;
+        .ifacebook,
+        .itwitter,
+        .ilinkedin,
+        .iinsta {
+          display: inline-block;
+          width: 35px;
+          border-radius: 5px;
+          img {
+            width: 100%;
+          }
+        }
+      }
+      .speakers-nj {
+        &:hover {
+          h4 {
+            color: $color-pink;
+          }
+        }
+        h4 {
+          margin-left: 40px;
+          margin-top: 10px;
+          font-size: 1.3rem;
+        }
+        p {
+          color: #9ea0b4;
+          margin-left: 40px;
+          margin-top: 10px;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
+// @media screen and (max-width: 600) {
+//   .container-pagespeaker {
+//     .container-speakers {
+//       display: flex;
+//       justify-content: center;
+//       padding: 0;
+
+//       h6 {
+//         display: flex;
+//         justify-content: center;
+//         padding: 0;
+//       }
+
+//       .container-performers {
+//         .card-speak {
+//           width: 100%;
+//         }
+//       }
+//     }
+//   }
+// }

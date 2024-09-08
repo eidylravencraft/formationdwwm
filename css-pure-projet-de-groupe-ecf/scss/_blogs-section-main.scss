@@ -1,0 +1,137 @@
+$color-blue: #3913c3;
+$color-pink: #f10486;
+$color-white: white;
+$color-bg-elem: #f5f7fa;
+$color-dark-blue: #111232;
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'roboto';
+}
+.container-blog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $color-bg-elem;
+  padding-bottom: 30px;
+  .subtitle-blog {
+    color: $color-pink;
+    font-weight: bold;
+    font-size: 0.8rem;
+    text-align: center;
+    position: relative;
+    &:before {
+      content: '';
+      display: block;
+      background-color: $color-pink;
+      height: 2px;
+      width: 15px;
+      position: absolute;
+      top: 7px;
+      right: 35px;
+    }
+    &:after {
+      content: '';
+      display: block;
+      background-color: $color-pink;
+      height: 2px;
+      width: 15px;
+      position: absolute;
+      top: 7px;
+      left: 35px;
+    }
+  }
+  h2 {
+    color: $color-dark-blue;
+    font-weight: 800;
+    font-size: 2rem;
+  }
+  p {
+    max-width: 400px;
+    margin: 20px;
+    text-align: center;
+    font-size: 0.8rem;
+  }
+  .container-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 85%;
+    margin-top: 30px;
+    gap: 25px;
+    .blog-articles {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      .blog-cards {
+        padding: 15px 15px 30px 15px;
+        background-color: $color-white;
+        border-radius: 5px;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.221);
+        position: relative;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+          box-shadow: none;
+          transform: scale(0.95);
+          h4 {
+            color: $color-pink;
+          }
+        }
+        .date-article {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          background-color: $color-pink;
+          width: 35px;
+          padding: 8px 5px;
+          border-radius: 5px;
+          position: absolute;
+          top: 22px;
+          left: 22px;
+          p {
+            margin: 2px 0;
+            text-align: center;
+            color: $color-white;
+          }
+          .jour-blog {
+            font-weight: bold;
+            font-size: 1rem;
+          }
+        }
+        img {
+          width: 100%;
+        }
+        p {
+          text-align: left;
+          margin: 20px 0;
+          font-size: 0.8rem;
+          color: rgb(174, 174, 174);
+        }
+        .subtitle-cardb {
+          font-weight: bold;
+          color: $color-blue;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container-blog {
+    .container-cards {
+      .blog-articles {
+        flex-direction: column;
+        img {
+          height: 150px;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}

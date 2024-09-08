@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dessin</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+    <h1>Petite griffe</h1>
+    <canvas id="drawing" width="500px" height="500px"></canvas>
+    <div class="tools">
+        <button id="erase">Effacer les lignes</button>
+         <div class="colorSelect">
+            <label for="colorPicker">Choisir la couleur du trait :</label>
+            <input type="color" class="colorpik" id="colorPicker"/>
+        </div>
+        <div class="colorSelect">
+            <label for="colorPicker2">Choisir la couleur du background :</label>
+            <input type="color" class="colorpik" id="colorPicker2"/>
+        </div>
+        <div class="colorSelect">
+            <label for="range">Choisir l'épaisseur :</label>
+            <input type="range" class="range" id="range" min="1" max="20" value="1"/>
+        </div>
+        <div class="position">
+            <p>Position du curseur :</p>
+            <p class="surX"></p>
+            <p class="surY"></p>
+        </div>
+    </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+*, ::after, ::before{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.loader{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%);
+}
+
+.dot{
+    display: inline-block;
+    margin: 0 15px;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50%;
+    animation: loader infinite 0.3s alternate;
+}
+
+.d1 {
+    animation-delay: 0.05s;
+}
+
+.d2 {
+    animation-delay: 0.1s;
+}
+
+.d3 {
+    animation-delay: 0.15s;
+}
+
+@keyframes loader {
+    100% {
+        transform: translateY(-30px);
+    }
+}

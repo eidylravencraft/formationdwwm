@@ -1,0 +1,264 @@
+$color-blue: #3913c3;
+$color-pink: #f10486;
+$color-white: white;
+$color-bg-elem: #f5f7fa;
+$color-dark-blue: #111232;
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container-hero {
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+}
+
+.container-blog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $color-bg-elem;
+  padding: 20px 0;
+  .subtitle-blog {
+    color: $color-pink;
+    font-weight: bold;
+    font-size: 0.8rem;
+    text-align: center;
+    position: relative;
+    &:before {
+      content: '';
+      display: block;
+      background-color: $color-pink;
+      height: 2px;
+      width: 15px;
+      position: absolute;
+      top: 7px;
+      right: 35px;
+    }
+    &:after {
+      content: '';
+      display: block;
+      background-color: $color-pink;
+      height: 2px;
+      width: 15px;
+      position: absolute;
+      top: 7px;
+      left: 35px;
+    }
+  }
+  h2 {
+    color: $color-dark-blue;
+    font-weight: 800;
+    font-size: 2rem;
+  }
+  p {
+    max-width: 600px;
+    margin: 20px;
+    text-align: center;
+  }
+  .container-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 25px;
+    .blog-articles {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      height: 100%;
+      width: 1000px;
+      .blog-cards {
+        padding: 15px 15px 30px 15px;
+        background-color: $color-white;
+        border-radius: 5px;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.221);
+        position: relative;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+          box-shadow: none;
+          transform: scale(0.95);
+          h4 {
+            color: $color-pink;
+          }
+        }
+        .date-article {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          background-color: $color-pink;
+          width: 45px;
+          padding: 15px 5px;
+          border-radius: 5px;
+          position: absolute;
+          top: 22px;
+          left: 22px;
+          p {
+            margin: 2px 0;
+            text-align: center;
+            color: $color-white;
+          }
+          .jour-blog {
+            font-weight: bold;
+            font-size: 1.2rem;
+          }
+        }
+        img {
+          width: 100%;
+        }
+        h4 {
+          font-size: 1.2rem;
+        }
+        p {
+          text-align: left;
+          margin: 20px 0;
+          font-size: 1rem;
+          color: rgb(174, 174, 174);
+        }
+        .subtitle-cardb {
+          font-weight: bold;
+          color: $color-blue;
+        }
+      }
+    }
+    .search-feeds {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      width: 370px;
+      .searching {
+        background-color: $color-dark-blue;
+        width: 100%;
+        padding: 35px;
+        border-radius: 5px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .inpt-labl {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          width: 100%;
+          height: 40px;
+          input {
+            position: relative;
+            padding: 20px;
+            width: 100%;
+            height: 50px;
+            border-radius: 3px;
+            border: none;
+          }
+          label {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            right: 10px;
+            width: 40px;
+            height: 32px;
+            background: $color-blue;
+            text-align: center;
+            color: $color-white;
+            font-size: 0.8rem;
+            border-radius: 5px;
+            &:hover {
+              background-color: #f10486;
+            }
+          }
+        }
+      }
+      .popular-feeds {
+        padding: 25px;
+        width: 100%;
+        background-color: $color-dark-blue;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        h4 {
+          color: $color-white;
+          margin-bottom: 5px;
+        }
+        .feed {
+          width: 100%;
+          display: flex;
+          color: $color-white;
+          .img-feed {
+            width: 100px;
+            height: 100px;
+            border-radius: 5px;
+            object-fit: cover;
+          }
+          .last-feed {
+            height: 100px;
+            width: 100%;
+            margin-left: 12px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            p {
+              width: 100%;
+              text-align: left;
+              margin: 0;
+              font-size: 0.9rem;
+            }
+            .date-feed {
+              text-align: end;
+              align-self: end;
+              height: 20px;
+              position: relative;
+              i {
+                position: absolute;
+                right: 90px;
+                top: -2px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1420px) {
+  .container-blog {
+    .container-cards {
+      max-width: 770px;
+      .search-feeds {
+        width: 100%;
+        .popular-feeds {
+          .last-feed {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .container-blog {
+    .container-cards {
+      max-width: 700px;
+      .blog-articles {
+        width: 90%;
+        flex-direction: column;
+        .blog-cards {
+          img {
+            object-fit: cover;
+          }
+        }
+      }
+      .search-feeds {
+        width: 90%;
+      }
+    }
+  }
+}

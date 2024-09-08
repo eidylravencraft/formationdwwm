@@ -1,0 +1,96 @@
+.container_testimonials {
+  background-image: linear-gradient(to top right, $color-blue, $color-pink);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+  .container_areatesti {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    color: $color-white;
+    .hline {
+      width: 25px;
+      height: 2px;
+      font-weight: 600;
+      background-color: $color-white;
+      margin: 0 40px;
+    }
+  }
+  .container_presentation {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+    h2 {
+      font-size: 40px;
+      font-weight: 700;
+      color: $color-white;
+    }
+    p {
+      text-align: center;
+      color: $color-white;
+    }
+  }
+  .container_people {
+    .container_cardplp {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 35px;
+      .card-people {
+        width: 450px;
+        // height: 250px;
+        background-color: $color-white;
+        padding: 25px 25px;
+        border-radius: 5px;
+        .r-people {
+          display: flex;
+          flex-direction: row;
+          img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 20px;
+          }
+          .identity {
+            margin-top: 30px;
+            margin-left: -10px;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            text-align: left;
+            line-height: 15px;
+            h3 {
+              margin: 0;
+              font-weight: 600;
+              font-size: 1.3rem;
+            }
+            p {
+              margin: 0;
+              font-weight: 600;
+              opacity: 0.6;
+            }
+            .lucky-stars {
+              flex-direction: row;
+              margin-left: 5px;
+            }
+          }
+        }
+        .material-symbols-outlined {
+          color: orange;
+          transform: scale(0.7);
+          margin-left: -10px;
+        }
+        p {
+          font-size: 0.9rem;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

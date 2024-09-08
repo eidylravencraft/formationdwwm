@@ -1,0 +1,52 @@
+.about-event {
+  width: 100vw;
+  height: 600px;
+  background-image: url('../src/about/about-bg.png');
+  background-size: cover;
+  background-color: #111131;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  img {
+    width: 35%;
+  }
+  .about-txt-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    gap: 15px;
+
+    h6 {
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+    h1 {
+      font-weight: 800;
+    }
+    p {
+      width: 90%;
+      font-weight: 500;
+      color: white;
+      &:nth-child(4) {
+        margin-top: -10px;
+      }
+    }
+    .personal-bottom {
+      height: 40px;
+      margin-top: -10px;
+      line-height: 45px;
+      .pinky {
+        display: inline-block;
+        background-color: $color-pink;
+        text-align: center;
+        border-radius: 50%;
+        margin-right: 15px;
+        height: 45px;
+        width: 45px;
+      }
+    }
+  }
+}

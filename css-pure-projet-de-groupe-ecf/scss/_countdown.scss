@@ -1,0 +1,47 @@
+@import '_variables.scss';
+
+.countdown {
+  padding-bottom: 20px;
+  .countdown-container {
+    position: relative;
+    height: 250px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: -50px;
+    border: 5px solid $color-count-border;
+    background-image: url('../src/countdown/left-shape.png'),
+      url('../src/countdown/bg.png'), url('../src/countdown/right-shape.png');
+    background-position: left top, left, right top;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-color: $color-blue;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    font-size: 3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 100px;
+    div {
+      display: inline-block;
+      width: 100%;
+    }
+    .days-container,
+    .hours-container,
+    .minutes-container,
+    .seconds-container {
+      display: flex;
+      flex-direction: column;
+    }
+    .days-label,
+    .hours-label,
+    .minutes-label,
+    .seconds-label {
+      font-size: 2rem;
+      font-weight: 400;
+    }
+    .point {
+      text-align: left;
+    }
+  }
+}

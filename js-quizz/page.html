@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1><strong>Quizz</strong> Culture Web.</h1>
+    <form action="">
+        <div class="mcq">
+            <p class="question">Qui a inventé le world Wide Web (www) ?</p>
+                <input type="radio" name="q1" id="bill-gates" class="answer" value="a" checked>
+                <label for="bill-gates">Bill Gates</label>
+                <br>
+                <input type="radio" name="q1" id="steve-jobs" class="answer" value="b">
+                <label for="steve-jobs">Steve Jobs</label>
+                <br>
+                <input type="radio" name="q1" id="tim-berners-lee" class="answer" value="c">
+                <label for="tim-berners-lee">Tim Berners-Lee</label>
+                <br>
+        </div>
+        <div class="mcq">
+            <p class="question">Quel est le langage de programmation le plus utilisé dans le monde ?</p>
+                <input type="radio" name="q2" id="python" class="answer" value="a" checked>
+                <label for="python">Python</label>
+                <br>
+                <input type="radio" name="q2" id="javascript" class="answer" value="b">
+                <label for="javascript">Javascript</label>
+                <br>
+                <input type="radio" name="q2" id="java" class="answer" value="c">
+                <label for="java">Java</label>
+                <br>
+        </div>
+        <div class="mcq">
+            <p class="question">Comment afficher "Hello World" dans la console en Javascript ?</p>
+                <input type="radio" name="q3" id="helloworld" class="answer" value="a" checked>
+                <label for="helloworld">#Hello World</label>
+                <br>
+                <input type="radio" name="q3" id="print" class="answer" value="b">
+                <label for="print">print("Hello World")</label>
+                <br>
+                <input type="radio" name="q3" id="log" class="answer" value="c">
+                <label for="log">console.log("HelloWorld")</label>
+                <br>
+        </div>
+        <div class="mcq">
+            <p class="question">Qu'est-ce que l'Open Source ?</p>
+                <input type="radio" name="q4" id="gratuit" class="answer" value="a" checked>
+                <label for="gratuit">Un logiciel gratuit</label>
+                <br>
+                <input type="radio" name="q4" id="accessible" class="answer" value="b">
+                <label for="accessible">Un logiciel dont le code source est accessible à tous</label>
+                <br>
+                <input type="radio" name="q4" id="facile" class="answer" value="c">
+                <label for="facile">Un logiciel avec une interface utilisateur facile à utiliser</label>
+                <br>
+        </div>
+        <div class="mcq">
+            <p class="question">Quelle entreprise est le plus grand fournisseur de services de cloud computing dans le monde</p>
+                <input type="radio" name="q5" id="amazon" class="answer" value="a" checked>
+                <label for="amazon">Amazon Web Service</label>
+                <br>
+                <input type="radio" name="q5" id="google" class="answer" value="b">
+                <label for="google">Google Cloud Platform</label>
+                <br>
+                <input type="radio" name="q5" id="microsoft" class="answer" value="c">
+                <label for="microsoft">Microsoft Azure</label>
+                <br>
+        </div>
+        <button>Valider</button>
+    </form>
+    <div class="result">
+        <p class="click">Cliquez sur <strong>valider</strong> pour voir les <strong>résultats.</strong></p>
+        <p class="comment"></p>
+        <p class="announce-score">Score : <strong class="score"></strong><strong>/ 5</strong></p>
+        <p class="cheer"></p>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Lato";
+    background: linear-gradient(to right, #36d1dc 0%, #5b86e5 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    max-width: 700px;
+    padding: 30px 70px;
+    margin: 100px 30px;
+    background-color: #f1f1f1;
+    border: 1px solid #a3a3a3;
+    border-radius: 5px;
+    box-shadow: 0px 4px 5px #00000048;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.incomplete, .invalide {
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: rgb(190, 64, 64);
+    display: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputs {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.input {
+    width: 100%;
+}
+
+label {
+    font-size: 0.9rem;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    margin-top: 7px;
+    border: none;
+    border-radius: 5px;
+    border-bottom: 1.5px solid #000000;
+    box-shadow: 0px 4px 5px #0000005e;
+}
+
+input::placeholder {
+    font-size: 1rem;
+}
+
+button {
+    background-color: #fabe33;
+    margin: 30px 0;
+    padding: 10px 30px;
+    font-weight: 600;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.imc-score {
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+}
+
+.wait {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.comment {
+    font-size: 1.2rem;
+    font-weight: 500;
+}

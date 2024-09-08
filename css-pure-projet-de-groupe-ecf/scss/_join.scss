@@ -1,0 +1,100 @@
+.join-container {
+  background-color: $color-bg-elem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 70px 0;
+  .join-container-all-cards {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    width: fit-content;
+    // width: 92%;
+    margin: 0 4%;
+    .join-card-container {
+      position: relative;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 400px;
+      border-radius: 5px;
+      padding: 30px;
+      gap: 20px;
+      overflow: hidden;
+      transition: all 0.5s ease-in-out;
+      svg {
+        position: relative;
+        height: 65px;
+        width: 65px;
+        background-color: $color-blue;
+        fill: white;
+        border-radius: 5px;
+        padding: 15px 15px;
+      }
+      h4 {
+        font-weight: 800;
+        margin: 0;
+      }
+      p {
+        color: rgb(182, 182, 182);
+        font-weight: 800;
+        margin: 0;
+        width: 100%;
+        text-align: left;
+      }
+      .chiffre {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        font-size: 2.5rem;
+        opacity: 0.05;
+        font-weight: 600;
+      }
+      &:hover::before {
+        transform: translateX(20px);
+      }
+      &:hover::after {
+        transform: translateX(-20px);
+      }
+      &::before {
+        position: absolute;
+        top: 0;
+        left: -20px;
+        background-image: url('/src/features/dots-blue.svg');
+        content: '';
+        width: 20px;
+        height: 70px;
+        transition: all 0.2s ease-in-out;
+      }
+      &::after {
+        position: absolute;
+        bottom: 0;
+        right: -20px;
+        background-image: url('/src/features/dots-pink.svg');
+        content: '';
+        width: 20px;
+        height: 70px;
+        transition: all 0.2s ease-in-out;
+      }
+    }
+  }
+  .join-title-container {
+    text-align: center;
+    .pink-title {
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-weight: 800;
+    }
+    p {
+      margin: auto;
+      margin-top: 20px;
+      width: 70%;
+      color: grey;
+      font-weight: 600;
+    }
+  }
+}
